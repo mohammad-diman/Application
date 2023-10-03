@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surat_masuk"
+            android:title="Surat Masuk"
+            android:icon="@drawable/baseline_email_20"/>
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item"
+            android:title="Surat Keluar"
+            android:icon="@drawable/envelope_open_solid"/>
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan"
+            android:title="Scan"
+            android:icon="@drawable/qrcode_solid"/>
+<!--        <item-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/buat_surat"-->
+<!--            android:title="Buat Surat"-->
+<!--            android:icon="@drawable/file_circle_plus_solid"/>-->
+<!--        <item-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/sppd"-->
+<!--            android:title="SPPD"-->
+<!--            android:icon="@drawable/envelopes_bulk_solid"/>-->
+<!--        <item-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/disposisi"-->
+<!--            android:title="Disposisi"-->
+<!--            android:icon="@drawable/shuffle_solid"/>-->
+
+</menu>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beranda"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beranda">
+
+    <!---->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        style="@style/custom_card_view_style"
+        android:layout_width="438dp"
+        android:layout_height="205dp"
+        app:cardBackgroundColor="#009688"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!---->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!---->
+            <!---->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profil"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_nama_profil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:src="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/tv_nama_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Mohammad Diman Podu"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.163"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.774" />
+            <!---->
+            <TextView
+                android:id="@+id/tv_email_pofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="dimanpodu@gmail.com"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.159"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profil"
+                app:layout_constraintVertical_bias="0.703" />
+            <!---->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!---->
+    </androidx.cardview.widget.CardView>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box_menu"
+        style="@style/custom_card_view_style"
+        android:layout_width="376dp"
+        android:layout_height="312dp"
+        app:cardBackgroundColor="@color/transparantcolor"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.6" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgcolor">
+
+            <Button
+                android:id="@+id/btn_ippkh"
+                android:layout_width="68dp"
+                android:layout_height="77dp"
+                android:backgroundTint="@color/gcolor"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/envelopes_bulk_solid"
+                app:iconGravity="textTop"
+                app:iconPadding="1dp"
+                app:iconSize="33dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.242" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="IPPKH"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/btn_ippkh"
+                app:layout_constraintStart_toStartOf="@+id/btn_ippkh"
+                app:layout_constraintTop_toBottomOf="@+id/btn_ippkh" />
+
+            <Button
+                android:id="@+id/btn_pem_barang"
+                android:layout_width="68dp"
+                android:layout_height="77dp"
+                android:backgroundTint="@color/gcolor"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/baseline_shopping_bag_24"
+                app:iconGravity="textTop"
+                app:iconPadding="1dp"
+                app:iconSize="35dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.242" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Pem. Barang"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/btn_pem_barang"
+                app:layout_constraintStart_toStartOf="@+id/btn_pem_barang"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pem_barang" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="MAP"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/btn_menu3"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="@+id/btn_menu3"
+                app:layout_constraintTop_toBottomOf="@+id/btn_menu3" />
+
+            <Button
+                android:id="@+id/btn_menu3"
+                android:layout_width="68dp"
+                android:layout_height="77dp"
+                android:backgroundTint="@color/gcolor"
+                android:contentDescription="@string/app_name"
+                app:icon="@drawable/baseline_map_24"
+                app:iconGravity="textTop"
+                app:iconPadding="1dp"
+                app:iconSize="35dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.948"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.242" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Menu"
+                android:textColor="#000000"
+                android:textColorHighlight="#050505"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.064"
+                tools:ignore="TextSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
