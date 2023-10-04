@@ -19,6 +19,12 @@
         android:theme="@style/Theme.Application"
         tools:targetApi="33">
         <activity
+            android:name=".MAP"
+            android:exported="false" />
+        <activity
+            android:name=".IPPKH"
+            android:exported="false" />
+        <activity
             android:name=".Pem_Barang"
             android:exported="false" />
         <activity
